@@ -14,7 +14,7 @@ import copy
 import matplotlib.pyplot as plt 
 import os
 import wandb
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 torch.set_num_threads(32) 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 wandb.login()

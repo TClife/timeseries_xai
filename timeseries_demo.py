@@ -30,7 +30,7 @@ from sklearn.linear_model import Ridge, lars_path
 from sklearn.utils import check_random_state
 from io import open
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 import os.path
 import json
 import string
