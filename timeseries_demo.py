@@ -684,6 +684,10 @@ label_codebooks = []
 label_weights = []
 label_position = []
 for k, (data, labels) in enumerate(validation_loader):
+
+    #create directory
+    os.makedirs("./ecg_sample/label{}".format(int(labels)), exist_ok=True)
+
     if labels == args.labels:
         #codebook
         net.eval()

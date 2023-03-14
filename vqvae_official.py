@@ -323,7 +323,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--lr', type=float, default=1e-3)
     parser.add_argument('--n_epochs', type=int, default=2000)
-    parser.add_argument('--mode', type=str, default='train', choice=['test', 'train'])
+    parser.add_argument('--mode', type=str, default='train', choices=['test', 'train'])
 
     #if test
     parser.add_argument('--test_data', type=str, default=False, help="Quantized test data for decoding")
